@@ -4,14 +4,15 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_storage/firebase_storage.dart';
 import 'package:flutter/material.dart';
+import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:image_picker/image_picker.dart';
-import 'package:movie_sample/movie_page.dart';
+import 'package:movie_sample/pre_initialized_player/pre_loaded_video_page.dart';
 import 'package:video_player/video_player.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp();
-  runApp(const MyApp());
+  runApp(const ProviderScope(child: MyApp()));
 }
 
 class MyApp extends StatelessWidget {
@@ -129,8 +130,10 @@ class _MyHomePageState extends State<MyHomePage> {
               child: const Text('add to firestore')),
           ElevatedButton(
               onPressed: () {
-                Navigator.of(context).push(
-                    MaterialPageRoute(builder: (context) => const MoviePage()));
+                // Navigator.of(context).push(
+                //     MaterialPageRoute(builder: (context) => const MoviePage()));
+                Navigator.of(context).push(MaterialPageRoute(
+                    builder: (context) => const PreLoadedVideoPage()));
               },
               child: const Text('go to movie page')),
         ],

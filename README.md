@@ -1,9 +1,9 @@
 # movie_sample
 
-TikTok風の動画再生アプリ
+ショートムービーサンプル
 
 ## 動画
-
+https://user-images.githubusercontent.com/87467867/184276481-3e906738-1b71-44bf-ad60-3820b90b78ce.MOV
 
 ## Getting Started
 

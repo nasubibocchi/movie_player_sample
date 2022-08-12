@@ -40,8 +40,10 @@ class PreLoadedVideoPage extends HookConsumerWidget {
                 ),
         );
       },
-      loading: () => const Center(child: CircularProgressIndicator()),
-      error: () => const Center(child: CircularProgressIndicator()),
+      loading: () =>
+          const Scaffold(body: Center(child: CircularProgressIndicator())),
+      error: () =>
+          const Scaffold(body: Center(child: CircularProgressIndicator())),
     );
   }
 }

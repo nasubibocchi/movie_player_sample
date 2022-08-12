@@ -1,16 +1,13 @@
 # movie_sample
 
-A new Flutter project.
+TikTok風の動画再生アプリ
+
+## 動画
+
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+1. Firebaseにアプリを接続する
+2. ＋ボタンをタップして動画を選択する
+3. Add to Firestore ボタンでFirestoreに動画を登録する
+4. go to movie page ボタンをタップして動画ページに移動する
